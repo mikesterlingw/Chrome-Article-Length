@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Article Length",
+  "description": "This extension will tell you how long the article you are about to read is, as well as an estimate for how long it will take to read.",
+  "version": "1.1",
+  "permissions": [
+    
+  ],
+  "browser_action": {
+
+  },
+  "content_scripts": [
+    {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
+    }
+  ],
+  "background":
+  {
+    "scripts":["background.js"]
+  }
+}
